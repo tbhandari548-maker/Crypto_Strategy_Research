@@ -3,3 +3,13 @@ __pycache__/
 *.py[cod]
 .env
 .vscode/
+# Historical data backups
+data/backup_before_history/
+
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.vscode/

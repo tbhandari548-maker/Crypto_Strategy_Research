@@ -11,31 +11,14 @@ from backtest.trade_analysis import analyze_trades
 from visualization.charts import (
     generate_tradingview_style_dashboard,
 )
-print()
-print("=" * 60)
-print("UPDATING LATEST MARKET DATA")
-print("=" * 60)
-
-# Update latest 1m Binance data
-subprocess.run(
-    [
-        sys.executable,
-        "data/download_data.py"
-    ],
-    check=True
-)
-
-# Build all chart timeframes
-subprocess.run(
-    [
-        sys.executable,
-        "data/resample_data.py"
-    ],
-    check=True
-)
 
 print()
-print("Latest market data updated successfully.")
+print("=" * 60)
+print("USING EXISTING HISTORICAL MARKET DATA")
+print("=" * 60)
+
+print("Automatic Kraken download skipped.")
+print("Historical data will be refreshed separately.")
 
 
 DATA_5M = "data/BTCUSDT_5m.csv"
